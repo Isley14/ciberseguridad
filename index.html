@@ -6,17 +6,20 @@
   <title>Inicio | Ciberseguridad</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
 <body>
+
+  
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Ciberseguridad</a>
+      <a class="navbar-brand" href="index.html">Ciberseguridad</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navLinks">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="amenazas.html">Amenazas</a></li>
           <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
         </ul>
@@ -24,20 +27,59 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <img src="ciberseguridad.jpg" alt="Imagen de ciberseguridad" class="img-fluid w-100" />
-    <div class="hero-text">
-      <h1>Protege tu información en la era digital</h1>
+  
+  <header class="hero-banner">
+    <img src="ciberseguridad.jpg" alt="Ciberseguridad" class="banner-img">
+    <div class="banner-overlay text-white">
+      <h1 class="display-5 fw-bold">Ciberseguridad: Protegiendo tu mundo digital</h1>
+      <p class="lead">Conoce los riesgos y aprende a defender tu información en línea.</p>
+      <a href="amenazas.html" class="btn btn-primary btn-lg mt-3">Descubre más</a>
     </div>
   </header>
 
-  <main class="container mt-5">
+ 
+  <main class="container py-5">
     <section>
       <h2>¿Qué es la Ciberseguridad?</h2>
-      <p>La ciberseguridad es el conjunto de prácticas y tecnologías diseñadas para proteger los sistemas informáticos y la información digital contra accesos no autorizados, daños o robo.</p>
+      <p>La ciberseguridad es el conjunto de prácticas, tecnologías y procesos que se utilizan para proteger sistemas, redes, programas y datos contra ataques digitales. Su objetivo principal es evitar el acceso no autorizado, la alteración o destrucción de información confidencial.</p>
+    </section>
+
+    <section class="mt-5">
+      <h2>¿Por qué es importante?</h2>
+      <div class="row text-center mt-4">
+        <div class="col-md-4">
+          <i class="bi bi-shield-lock" style="font-size: 3rem; color: #0d6efd;"></i>
+          <h5 class="mt-3">Protección de Datos</h5>
+          <p>Previene el robo de información sensible, como contraseñas, datos bancarios o personales.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-hdd-network" style="font-size: 3rem; color: #198754;"></i>
+          <h5 class="mt-3">Seguridad en Redes</h5>
+          <p>Evita intrusos que puedan comprometer tu conexión a Internet o dispositivos conectados.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-person-lock" style="font-size: 3rem; color: #dc3545;"></i>
+          <h5 class="mt-3">Privacidad Digital</h5>
+          <p>Impide que terceros accedan a tus comunicaciones, ubicación o historial en línea.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h2>¿Sabías que...?</h2>
+      <ul>
+        <li>Más del 80% de los ataques informáticos se deben a errores humanos.</li>
+        <li>Un ransomware puede dejar a una empresa inactiva por semanas.</li>
+        <li>Las contraseñas más comunes siguen siendo "123456" y "password".</li>
+      </ul>
     </section>
   </main>
 
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Ciberseguridad. Todos los derechos reservados.
+  </footer>
+
+  
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
